@@ -1,8 +1,15 @@
 import 'package:get/get.dart';
 
 class CalculatorController extends GetxController {
-  var firstNumber  = '10'.obs;
+  var firstNumber = '10'.obs;
   var secondNumber = '20'.obs;
-  var mathResult   = '30'.obs;
-  var operation    = '+'.obs;
+  var mathResult = '30'.obs;
+  var operation = '+'.obs;
+
+  resetAll() {
+    firstNumber.value = '0';
+    secondNumber.value = '0';
+    mathResult.value = '0';
+    operation.value = '+';
+  }
 }
