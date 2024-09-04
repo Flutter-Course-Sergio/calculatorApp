@@ -12,4 +12,10 @@ class CalculatorController extends GetxController {
     mathResult.value = '0';
     operation.value = '+';
   }
+
+  addNumber(String number) {
+    if (mathResult.value == '0') return mathResult.value = number;
+
+    mathResult.value = mathResult.value + number;
+  }
 }
