@@ -24,6 +24,8 @@ class CalculatorController extends GetxController {
   addNumber(String number) {
     if (mathResult.value == '0') return mathResult.value = number;
 
+    if (mathResult.value == '-0') return mathResult.value = '-$number';
+
     mathResult.value = mathResult.value + number;
   }
 }
