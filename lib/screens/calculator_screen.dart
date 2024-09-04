@@ -100,7 +100,9 @@ class CalculatorScreen extends StatelessWidget {
                     text: '0',
                     big: true,
                     onPressed: () => calculatorController.addNumber('0')),
-                CalculatorButton(text: '.', onPressed: () => print('.')),
+                CalculatorButton(
+                    text: '.',
+                    onPressed: () => calculatorController.addDecimalPoint()),
                 CalculatorButton(
                     text: '=',
                     bgColor: const Color(0xffF0A23B),

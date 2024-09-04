@@ -28,4 +28,10 @@ class CalculatorController extends GetxController {
 
     mathResult.value = mathResult.value + number;
   }
+
+  addDecimalPoint() {
+    if (mathResult.contains('.')) return;
+
+    mathResult.value = '${mathResult.value}.';
+  }
 }
