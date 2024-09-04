@@ -13,6 +13,14 @@ class CalculatorController extends GetxController {
     operation.value = '+';
   }
 
+  changeNegatievPositive() {
+    if (mathResult.startsWith('-')) {
+      mathResult.value = mathResult.value.replaceFirst('-', '');
+    } else {
+      mathResult.value = '-${mathResult.value}';
+    }
+  }
+
   addNumber(String number) {
     if (mathResult.value == '0') return mathResult.value = number;
 

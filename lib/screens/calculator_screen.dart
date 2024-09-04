@@ -27,7 +27,8 @@ class CalculatorScreen extends StatelessWidget {
                 CalculatorButton(
                     text: '+/-',
                     bgColor: const Color(0xffA5A5A5),
-                    onPressed: () => print('+/-')),
+                    onPressed: () =>
+                        calculatorController.changeNegatievPositive()),
                 CalculatorButton(
                     text: 'del',
                     bgColor: const Color(0xffA5A5A5),
