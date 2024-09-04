@@ -34,4 +34,10 @@ class CalculatorController extends GetxController {
 
     mathResult.value = '${mathResult.value}.';
   }
+
+  selectOperation(String operatorSymbol) {
+    operation.value = operatorSymbol;
+    firstNumber.value = mathResult.value;
+    mathResult.value = '0';
+  }
 }

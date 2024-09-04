@@ -36,7 +36,7 @@ class CalculatorScreen extends StatelessWidget {
                 CalculatorButton(
                     text: '/',
                     bgColor: const Color(0xffF0A23B),
-                    onPressed: () => print('/')),
+                    onPressed: () => calculatorController.selectOperation('/')),
               ],
             ),
             Row(
@@ -54,7 +54,7 @@ class CalculatorScreen extends StatelessWidget {
                 CalculatorButton(
                     text: 'X',
                     bgColor: const Color(0xffF0A23B),
-                    onPressed: () => print('X')),
+                    onPressed: () => calculatorController.selectOperation('X')),
               ],
             ),
             Row(
@@ -72,7 +72,7 @@ class CalculatorScreen extends StatelessWidget {
                 CalculatorButton(
                     text: '-',
                     bgColor: const Color(0xffF0A23B),
-                    onPressed: () => print('-')),
+                    onPressed: () => calculatorController.selectOperation('-')),
               ],
             ),
             Row(
@@ -90,7 +90,7 @@ class CalculatorScreen extends StatelessWidget {
                 CalculatorButton(
                     text: '+',
                     bgColor: const Color(0xffF0A23B),
-                    onPressed: () => print('+')),
+                    onPressed: () => calculatorController.selectOperation('+')),
               ],
             ),
             Row(
