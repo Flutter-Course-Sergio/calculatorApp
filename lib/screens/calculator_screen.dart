@@ -79,7 +79,8 @@ class CalculatorScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CalculatorButton(text: '0', onPressed: () => print('0')),
+                CalculatorButton(
+                    text: '0', big: true, onPressed: () => print('0')),
                 CalculatorButton(text: '.', onPressed: () => print('.')),
                 CalculatorButton(
                     text: '=',
