@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../controllers/calculator_controller.dart';
 import 'widegts.dart';
 
 class MathResults extends StatelessWidget {
-  const MathResults({super.key});
+  final calculatorController = Get.find<CalculatorController>();
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SubResult(text: '1000'),
-        SubResult(text: '+'),
-        SubResult(text: '1000'),
-        const LineSeparator(),
-        MainResult(text: '2000'),
-      ],
+    return Obx(
+      () => Column(
+        children: [
+          SubResult(text: '${calculatorController.firstNumber}'),
+          SubResult(text: '${calculatorController.operation}'),
+          SubResult(text: '${calculatorController.secondNumber}'),
+          const LineSeparator(),
+          MainResult(text: '${calculatorController.mathResult}'),
+        ],
+      ),
     );
   }
 }
