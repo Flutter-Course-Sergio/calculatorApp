@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../controllers/calculator_controller.dart';
 import '../widgets/widegts.dart';
 
 class CalculatorScreen extends StatelessWidget {
-  const CalculatorScreen({super.key});
+  final calculatorController = Get.put(CalculatorController());
 
   @override
   Widget build(BuildContext context) {
