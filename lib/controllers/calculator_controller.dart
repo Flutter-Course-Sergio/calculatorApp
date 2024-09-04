@@ -40,4 +40,13 @@ class CalculatorController extends GetxController {
     firstNumber.value = mathResult.value;
     mathResult.value = '0';
   }
+
+  deleteLastNumber() {
+    if (mathResult.value.replaceAll('-', '').length > 1) {
+      mathResult.value =
+          mathResult.value.substring(0, mathResult.value.length - 1);
+    } else {
+      mathResult.value = '0';
+    }
+  }
 }

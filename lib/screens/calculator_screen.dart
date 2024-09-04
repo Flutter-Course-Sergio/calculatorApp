@@ -32,7 +32,7 @@ class CalculatorScreen extends StatelessWidget {
                 CalculatorButton(
                     text: 'del',
                     bgColor: const Color(0xffA5A5A5),
-                    onPressed: () => print('del')),
+                    onPressed: () => calculatorController.deleteLastNumber()),
                 CalculatorButton(
                     text: '/',
                     bgColor: const Color(0xffF0A23B),
