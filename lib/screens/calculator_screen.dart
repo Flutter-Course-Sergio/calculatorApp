@@ -14,11 +14,7 @@ class CalculatorScreen extends StatelessWidget {
         child: Column(
           children: [
             Expanded(child: Container()),
-            SubResult(text: '1000'),
-            SubResult(text: '+'),
-            SubResult(text: '1000'),
-            const LineSeparator(),
-            MainResult(text: '2000'),
+            MathResults(),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
